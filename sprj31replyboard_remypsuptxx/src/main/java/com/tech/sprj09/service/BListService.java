@@ -164,5 +164,4 @@ public class BListService implements BServiceInter{
 //		//모델에 적재
 //		model.addAttribute("list",dtos);	
 	}
-
 }

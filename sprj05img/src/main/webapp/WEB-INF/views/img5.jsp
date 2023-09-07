@@ -11,6 +11,8 @@
 <img src="/sprj05img/resources/img5.png" alt="" /> <br />
 <img src="/sprj05img/images/img5.png" alt="" />
 
+<img src="/sprj05img/resources/기여어.png" alt="" /> <br />
+<img src="/sprj05img/resources/book01.jpg" alt="" /> <br />
 
 </body>
 </html>

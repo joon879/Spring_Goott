@@ -1,0 +1,58 @@
+create table reviewtb(
+review varchar2(200),
+repoint number);
+select * from reviewtb;
+-------위는 1차안, 아래 2차안 다시 표현해보기----
+create table reviewtb(
+reno number,
+review varchar2(200),
+repoint number);
+select * from reviewtb;
+
+create sequence reviewtb_seq;
+
+drop table reviewtb purge;
+
+-------------------------------
+JOIN MAP  테이블3개처리
+-------------------------------
+create table student2(
+no number,
+name varchar2(15),
+subject_id number,
+score number);
+
+create table grade(
+grade char(4),
+min_score number,
+max_score number);
+
+create table subject(
+subject_id number,
+subject_name varchar2(30));
+
+insert into subject values(10,'Computer Enginnerring');
+insert into subject values(20,'Music');
+insert into subject values(30,'English');
+insert into subject values(40,'History');
+insert into subject values(50,'Math');
+commit;
+
+insert into student2 values(1000,'James',10,98);
+insert into student2 values(1001,'Ford',10,91);
+insert into student2 values(1002,'Allen',20,89);
+insert into student2 values(1003,'Steve',30,83);
+insert into student2 values(1004,'Miller',40,78);
+commit;
+
+insert into grade values('A+',96,100);
+insert into grade values('A0',90,95);
+insert into grade values('B+',86,89);
+insert into grade values('B0',80,85);
+insert into grade values('C+',76,79);
+insert into grade values('C0',70,75);
+insert into grade values('D+',66,69);
+insert into grade values('D0',60,65);
+insert into grade values('F',0,64);
+
+commit;
